@@ -18,6 +18,9 @@
             .then((jsObject) => {
                 console.log(jsObject);
                 data = jsObject;
+                data.business.forEach(e => {
+                    document.querySelector(".container").innerHTML += "<br>" + e.name;
+                });        
             });
         
     </script>
